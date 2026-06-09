@@ -68,4 +68,22 @@ Run it inside the repo you want to check, or just describe the idea. It does the
 
 ---
 
-<sub>Yes — this README is exactly the kind of buzzword-stuffed marketing spin the skill is built to see through. The skill is immune to its own copy. Run it on this repo and find out.</sub>
+## We ran it on itself (it was not kind)
+
+Obviously the first thing we did was point `cba-searching` at its own repo. The verdict it returned:
+
+> **I found 7 similar repositories, of which 1 shares 4+ of its 8 features and 0 fully cover the application.**
+
+The one that matters: **[r14dd/patent](https://github.com/r14dd/patent)** (360★, Rust, tested, CI, actively shipping) — prior-art search for code ideas across 11 package registries with an Open / Crowded / Saturated verdict. If you want a mature, multi-registry, battle-tested tool, genuinely go use it. It's excellent and it's further along than this.
+
+So why does this exist? **Execution scoring.** `cba-searching` doesn't just count similar repos — it grades the *incumbents*: stars, releases, tests, CI, contributors, maintained-vs-graveyard. `patent` tells you the space is crowded; `cba-searching` tells you whether the crowd is **asleep** — which is the only thing that decides whether a "done" idea is still worth building. That's the gap, and it's the whole pitch.
+
+The skill's own closing line about itself:
+
+> *"…everything else is a Claude-skill repackage with zero tests and zero stars. Build the execution-scoring angle or don't build at all — the search box you're selling would've told you `patent` existed in 30 seconds."*
+
+So we built the execution-scoring angle. You're looking at it. (Tests and stars: still pending. Baby steps.)
+
+---
+
+<sub>Yes — this README is exactly the kind of buzzword-stuffed marketing spin the skill is built to see through. It ran on itself anyway and lived. Run it on <em>your</em> repo and find out if yours does.</sub>
