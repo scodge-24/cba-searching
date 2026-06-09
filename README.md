@@ -37,7 +37,7 @@ It opens with the number that matters:
 ## Install
 
 ```bash
-git clone https://github.com/<you>/cba-searching.git ~/.claude/skills/cba-searching
+git clone https://github.com/scodge-24/cba-searching.git ~/.claude/skills/cba-searching
 ```
 
 Or symlink your local checkout:
