@@ -70,17 +70,18 @@ Run it inside the repo you want to check, or just describe the idea. It does the
 
 ## We ran it on itself (it was not kind)
 
-Obviously the first thing we did was point `cba-searching` at its own repo. The verdict it returned:
+This skill has been tested exactly once, on itself, so we're 100% confident it works and is ready to go. Obviously the first thing we did was point it at its own repo. It opened with:
 
-> **I found 7 similar repositories, of which 1 shares 4+ of its 8 features and 0 fully cover the application.**
+> **I found 7 similar repositories, of which 1 shares 4+ of your 8 features and 0 fully cover your application.**
 
-The one that matters: **[r14dd/patent](https://github.com/r14dd/patent)** (360★, Rust, tested, CI, actively shipping) — prior-art search for code ideas across 11 package registries with an Open / Crowded / Saturated verdict. If you want a mature, multi-registry, battle-tested tool, genuinely go use it. It's excellent and it's further along than this.
+and closed with:
 
-So why does this exist? **Execution scoring.** `cba-searching` doesn't just count similar repos — it grades the *incumbents*: stars, releases, tests, CI, contributors, maintained-vs-graveyard. `patent` tells you the space is crowded; `cba-searching` tells you whether the crowd is **asleep** — which is the only thing that decides whether a "done" idea is still worth building. That's the gap, and it's the whole pitch.
+> *"`r14dd/patent` (360★, tested, CI, shipped today) already does prior-art-for-code-ideas across 11 registries — your core pitch, its literal tagline. Your only real edge is grading incumbents on execution, which patent doesn't do yet; everything else is a Claude-skill repackage with zero tests and zero stars. Build the execution-scoring angle or don't build at all — the search box you're selling would've told you patent existed in 30 seconds."*
 
-The skill's own closing line about itself:
+So it correctly identified us as exactly the genius it's built to roast, recommended a competitor, and told us to maybe not bother. Two honest takeaways:
 
-> *"…everything else is a Claude-skill repackage with zero tests and zero stars. Build the execution-scoring angle or don't build at all — the search box you're selling would've told you `patent` existed in 30 seconds."*
+- **[r14dd/patent](https://github.com/r14dd/patent) is the real deal** — mature, multi-registry, battle-tested. If you want prior-art search across 11 package registries, genuinely go use it. It's further along than this.
+- **`cba-searching`'s one real edge is execution scoring.** It doesn't just count similar repos — it grades the *incumbents*: stars, releases, tests, CI, contributors, maintained-vs-graveyard. `patent` tells you the space is crowded; `cba-searching` tells you whether the crowd is **asleep** — which is the only thing that decides whether a "done" idea is still worth building.
 
 So we built the execution-scoring angle. You're looking at it. (Tests and stars: still pending. Baby steps.)
 
